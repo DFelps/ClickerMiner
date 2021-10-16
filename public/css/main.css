@@ -1,0 +1,98 @@
+body {background-image: url("../img/fundo.png");
+    background-color: #cccccc;}
+
+.retangulo{fill:rgb(32, 32, 32);
+    stroke:black;
+    stroke-width:5;
+    opacity:0.93}
+
+.linha{fill:rgb(32, 32, 32);
+        position: absolute;
+        stroke:rgb(255, 255, 255);
+        stroke-width:2;
+        opacity:0.93;
+        top: 175px;
+        left: 35px;
+    }
+    .retantudo{fill:rgb(32, 32, 32);
+        position: absolute;
+        stroke:black;
+    stroke-width:5;
+    opacity:0.93;
+    top: 195px;
+    left: 640px;
+    }
+        
+
+.logo{margin-left: 240px; }
+
+.picareta1{position: absolute;
+    top: 265px;
+    left: 90px;
+    width: 300px;
+    height: 300px;
+}
+
+.pedra{position: absolute;
+    top: 320px;
+    left: 150px;
+}
+
+#dinheiro{
+    position: absolute;
+    top: 180px;
+    left: 205px;
+    color: white;
+    font-size: 25px;
+    font-weight: bolder;
+}
+
+.textdinheiro{
+    position: absolute;
+    top: 178px;
+    left: 100px;
+    color: white;
+    font-size: 25px;
+    font-weight: bolder;
+}
+
+.textloja{
+    position: absolute;
+    top: 120px;
+    left: 100px;
+    color: white;
+    font-size: 25px;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+.textupgrade{
+    position: absolute;
+    top: 120px;
+    left: 595px;
+    color: white;
+    font-size: 25px;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+.textsobre{
+    position: absolute;
+    top: 120px;
+    left: 1146px;
+    color: white;
+    font-size: 25px;
+    font-weight: bolder;
+    cursor: pointer;
+}
+.sobre{
+    position: absolute;
+    width: 400px;
+    height: 500px;
+    top: 230px;
+    left: 720px;
+}
+#sobre{
+    position: absolute;
+    color: white;
+}

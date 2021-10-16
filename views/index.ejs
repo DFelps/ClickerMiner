@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Click Miner</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="sortcut icon" href="../img/pick.ico" type="image/x-icon" />
+
+</head>
+<body>
+    <img class="logo" src="../img/logo.png">
+    <div class="retangle">
+<div class="pickaxe2">
+</div>
+    <svg width="1270" height="630">
+        <rect class="retangulo" x="50" y="20" rx="20" ry="20" width="1200" height="600"/>
+      </svg>
+
+      <svg class="linha" width="1200" height="630">
+        <rect class="linha" x="50" y="20" width="1200" height="1"/>
+      </svg>
+
+      <svg class="retantudo" width="660" height="700">
+        <rect class="retantudo" x="50" y="20" width="500" height="490"/>
+      </svg>
+
+    </div>
+    <p class="textdinheiro">Dinheiro: </p>
+    <p class="textloja">Loja </p>
+    <p class="textupgrade">Upgrade </p>
+    <p class="textsobre">Sobre </p>
+    <div class="sobre">
+        <p id="sobre">Inicio de projeto clicker simples feito em node.js para treinar linguagens JavaScript e CSS.</p>
+    </div>
+    <p id="dinheiro">0</p>
+</body>
+
+<script type="text/javascript">
+var points = 0;
+    function miner()
+    {
+    document.pic.src='../img/pickmadeira2.png';
+    setTimeout(minerar, 100);
+    points++;
+    console.log(points);
+    document.getElementById("dinheiro").innerHTML =  points;
+    }
+    function minerar(){
+        document.pic.src='../img/pickmadeira1.png';
+    } 
+
+    //Sobre
+    function about(){
+      document.getElementById("sobre").innerHTML =  points;
+    }
+
+
+    </script>
+     <img class="pedra" src="../img/pedra.png" alt="">
+    <img class="picareta1" src="../img/pickmadeira1.png" name="pic" onclick="miner()"/>
+
+</html>
