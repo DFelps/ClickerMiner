@@ -21,22 +21,47 @@
         <rect class="linha" x="50" y="20" width="1200" height="1"/>
       </svg>
 
-      <svg class="retantudo" width="660" height="700">
-        <rect class="retantudo" x="50" y="20" width="500" height="490"/>
-      </svg>
-
     </div>
-    <p class="textdinheiro">Dinheiro: </p>
-    <p class="textloja">Loja </p>
+    <p class="textdinheiro">Moedas: </p>
+    <p id="textloja">Loja </p>
+        <div class="loja">
+            <div class="item1-pickpedra">
+              <img class="pickicon" style="position: absolute;top:20px; left:20px" src="../img/pickpedra1.png">
+              <p id="item1-text" style="position: absolute;top: -10px; left: 120px;">Picareta de pedra</p>
+              <p id="item1-preco" style="position: absolute;top: 43px; left: 295px;">100</p>
+              <img class="moeda" style="position: absolute; top:68px; left:260px" src="../img/moeda.png" alt="">
+              <button id="item1-comprar" style="position: absolute;top:68px; left: 400px;">Comprar</button>
+                <svg class="item1" style="fill:rgba(55, 131, 48, 0.445); border: 2px solid white" width="500" height="100">
+                <rect class="item1" y="1" width="500" height="100"/>
+                </svg>
+            </div>
+          <svg class="item2" style="fill:rgba(150, 101, 9, 0.507); border: 2px solid white" width="500" height="100">
+            <rect class="item2" y="1" width="500" height="100"/>
+          </svg>
+          <svg class="item3" style="fill:rgba(55, 131, 48, 0.445); border: 2px solid white" width="500" height="100">
+            <rect class="item3" y="1" width="500" height="100"/>
+          </svg>
+          <svg class="item4" style="fill:rgba(150, 101, 9, 0.507); border: 2px solid white" width="500" height="100">
+            <rect class="item4" y="1" width="500" height="100"/>
+          </svg>
+          <svg class="item5" style="fill:rgba(55, 131, 48, 0.445); border: 2px solid white" width="500" height="100">
+            <rect class="item5" y="1" width="500" height="100"/>
+          </svg>
+          </div>
+
+        </body>
     <p class="textupgrade">Upgrade </p>
-    <p class="textsobre">Sobre </p>
     <div class="sobre">
         <p id="sobre">Inicio de projeto clicker simples feito em node.js para treinar linguagens JavaScript e CSS.</p>
     </div>
     <p id="dinheiro">0</p>
+    <img class="moeda" style="position: absolute; top:205px; left:90px" src="../img/moeda.png" alt="">
 </body>
-
+<img class="pedra" src="../img/pedra.png" alt="">
+    <img class="picareta1" src="../img/pickmadeira1.png" name="pic" onclick="miner()"/>
+    
 <script type="text/javascript">
+//PICARETA E ANIMAÇÃO
 var points = 0;
     function miner()
     {
@@ -50,14 +75,38 @@ var points = 0;
         document.pic.src='../img/pickmadeira1.png';
     } 
 
-    //Sobre
-    function about(){
-      document.getElementById("sobre").innerHTML =  points;
-    }
+    // SOBRE
+  var x = document.getElementById('sobre');
+    x.style.visibility = 'hidden';
+function myFunction() {
+  var x = document.getElementById('sobre');
+  if (x.style.visibility === 'visible') {
 
+    x.style.visibility = 'hidden';
+  } else {
+    x.style.visibility = 'visible';
+  }
+}
+
+    // LOJA
+    var x = document.getElementById('sobre');
+    x.style.visibility = 'hidden';
+function myFunction() {
+  var x = document.getElementById('sobre');
+  if (x.style.visibility === 'visible') {
+
+    let el = document.getElementById('textsobre');
+// alterando uma propriedade
+    x.style.visibility = 'hidden';
+    el.style.color = 'white';
+  } else {
+    let el = document.getElementById('textsobre');
+    x.style.visibility = 'visible';
+    el.style.color = 'saddlebrown';
+  }
+}
 
     </script>
-     <img class="pedra" src="../img/pedra.png" alt="">
-    <img class="picareta1" src="../img/pickmadeira1.png" name="pic" onclick="miner()"/>
 
+<button id="textsobre" onclick="myFunction()">Sobre</button>
 </html>

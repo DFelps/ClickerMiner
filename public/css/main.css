@@ -7,23 +7,22 @@ body {background-image: url("../img/fundo.png");
     opacity:0.93}
 
 .linha{fill:rgb(32, 32, 32);
-        position: absolute;
-        stroke:rgb(255, 255, 255);
-        stroke-width:2;
-        opacity:0.93;
-        top: 175px;
-        left: 35px;
-    }
-    .retantudo{fill:rgb(32, 32, 32);
-        position: absolute;
-        stroke:black;
+    position: absolute;
+    stroke:rgb(255, 255, 255);
+    stroke-width:2;
+    opacity:0.93;
+    top: 175px;
+    left: 35px;}
+
+.retantudo{fill:rgb(32, 32, 32);
+    position: absolute;
+    stroke:rgb(112, 112, 112);
     stroke-width:5;
     opacity:0.93;
     top: 195px;
     left: 640px;
-    }
+}
         
-
 .logo{margin-left: 240px; }
 
 .picareta1{position: absolute;
@@ -33,6 +32,11 @@ body {background-image: url("../img/fundo.png");
     height: 300px;
 }
 
+.moeda{position: absolute;
+    width: 30px;
+    height: 30px;
+}
+
 .pedra{position: absolute;
     top: 320px;
     left: 150px;
@@ -40,8 +44,8 @@ body {background-image: url("../img/fundo.png");
 
 #dinheiro{
     position: absolute;
-    top: 180px;
-    left: 205px;
+    top: 182px;
+    left: 233px;
     color: white;
     font-size: 25px;
     font-weight: bolder;
@@ -49,14 +53,14 @@ body {background-image: url("../img/fundo.png");
 
 .textdinheiro{
     position: absolute;
-    top: 178px;
-    left: 100px;
+    top: 181px;
+    left: 135px;
     color: white;
     font-size: 25px;
     font-weight: bolder;
 }
 
-.textloja{
+#textloja{
     position: absolute;
     top: 120px;
     left: 100px;
@@ -76,14 +80,16 @@ body {background-image: url("../img/fundo.png");
     cursor: pointer;
 }
 
-.textsobre{
+#textsobre{
     position: absolute;
-    top: 120px;
-    left: 1146px;
+    top: 145px;
+    left: 1140px;
     color: white;
     font-size: 25px;
     font-weight: bolder;
     cursor: pointer;
+    background: transparent;
+    border: none;
 }
 .sobre{
     position: absolute;
@@ -95,4 +101,41 @@ body {background-image: url("../img/fundo.png");
 #sobre{
     position: absolute;
     color: white;
+}
+
+.loja{
+    position: absolute;
+    width: 520px;
+    height: 460px;
+    top: 230px;
+    left: 670px;
+    overflow: auto;
+    border: 2px solid white;
+}
+
+.pickicon{position: absolute;
+    width: 80px;
+    height: 80px;
+    transform: rotate(30deg);
+}
+#item1-text{
+    position: absolute;
+    color: white;
+    font-size: 36px;
+    font-weight: bolder;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+}
+#item1-preco{
+    position: absolute;
+    color: white;
+    font-size: 26px;
+}
+#item1-comprar{
+    position: absolute;
+    color: saddlebrown;
+    font-size: 20px;
+    cursor: pointer;
+    width: 95px;
 }
